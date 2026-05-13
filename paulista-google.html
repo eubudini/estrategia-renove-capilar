@@ -22,13 +22,11 @@
       th { background: #f0f0f0; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; }
       code, .mono { font-family: "SF Mono", Menlo, monospace; font-size: 11px; }
       .small { font-size: 11px; color: #666; }
-      .total td { background: #111 !important; color: #fff; font-weight: 600; }
       .box { border: 1px solid #111; padding: 10px 14px; margin-bottom: 14px; font-size: 13px; }
       .box-google { border: 1px solid #ea4335; background: #fff8f7; padding: 10px 14px; margin-bottom: 14px; }
       .ag-tricologista { background: #fff5e6; font-weight: 600; }
       .ag-especialista { background: #e8f4ff; font-weight: 600; }
       .ag-avaliacao { background: #e8ffe8; font-weight: 600; }
-      .tbd { color: #b00; background: #fff8f8; padding: 1px 5px; font-family: "SF Mono", Menlo, monospace; font-size: 11px; }
       .badge-google { display: inline-block; background: #ea4335; color: #fff; padding: 2px 8px; font-size: 11px; font-family: "SF Mono", Menlo, monospace; border-radius: 3px; }
       .kw-exact { color: #b00080; font-weight: 600; }
       .kw-phrase { color: #006400; font-weight: 600; }
@@ -36,7 +34,6 @@
       ul.kws li { break-inside: avoid; margin-bottom: 2px; }
       .neg-cat { background: #f8f8f8; border-left: 3px solid #b00; padding: 8px 12px; margin-bottom: 10px; font-size: 12px; }
       .neg-cat strong { color: #b00; }
-      .warning { background: #fff4cc; border: 1px solid #d49b00; padding: 10px 14px; margin-bottom: 14px; font-size: 13px; }
     </style>
   </head>
   <body>
@@ -55,15 +52,11 @@
 
     <h1><span class="badge-google">GOOGLE ADS</span> · Paulista (SP) · Renove Capilar</h1>
     <p class="lead">
-      Conta MCC SP3 <code>646-948-2801</code> · Budget <strong>R$ 500/mês (~R$ 16,67/dia)</strong> · Raio <strong>6 km</strong> do endereço <span class="tbd">[TBD]</span> · Bidding <strong>MAXIMIZE_CONVERSIONS</strong> desde dia 1.
+      Budget <strong>R$ 500/mês (~R$ 16,67/dia)</strong> · Raio <strong>6 km</strong> da clínica na região da Paulista · Estratégia de lance <strong>Maximizar Conversões</strong> desde o primeiro dia.
     </p>
 
-    <div class="warning">
-      <strong>⚠ Bloqueio para subir:</strong> endereço da unidade Paulista ainda <span class="tbd">[TBD]</span>. Raio só pode ser configurado após confirmação. Demais ativos (keywords, negativas, RSAs) já validados.
-    </div>
-
     <div class="box-google">
-      <strong>Base da estratégia:</strong> mesma estrutura do Moema — 3 ad groups validados na antiga (TRICOLOGISTA / ESPECIALISTA CC / AVALIAÇÃO). Diferença: keywords geo-modificadas para bairros do entorno da Paulista (Jardins, Bela Vista, Higienópolis, Cerqueira César, Consolação).
+      <strong>Premissa estratégica:</strong> mesma estrutura da unidade Moema — 3 grupos de anúncios baseados nos perfis de busca mais qualificados em tricologia capilar. As palavras-chave geográficas são adaptadas para os bairros do entorno da Av. Paulista (Jardins, Bela Vista, Higienópolis, Cerqueira César, Consolação).
     </div>
 
     <h2>1. Configuração da campanha</h2>
@@ -71,30 +64,26 @@
       <colgroup><col style="width:22%"><col></colgroup>
       <thead><tr><th>Campo</th><th>Configuração</th></tr></thead>
       <tbody>
-        <tr><td>Nome</td><td class="mono">[SP3] [SEARCH] [MAX.CONV] [PAULISTA]</td></tr>
-        <tr><td>Tipo</td><td>Search · só Rede de Pesquisa</td></tr>
-        <tr><td>Parceiros de pesquisa</td><td><strong>OFF</strong></td></tr>
-        <tr><td>Rede de Display</td><td><strong>OFF</strong></td></tr>
-        <tr><td>Bidding</td><td>Maximizar Conversões · sem tCPA inicial</td></tr>
-        <tr><td>Meta de conversão</td><td>Leads (via API)</td></tr>
-        <tr><td>Localização</td><td>Raio <strong>6 km</strong> de <span class="tbd">[TBD endereço]</span></td></tr>
+        <tr><td>Tipo</td><td>Pesquisa · apenas Rede de Pesquisa</td></tr>
+        <tr><td>Parceiros de pesquisa</td><td>Desativado</td></tr>
+        <tr><td>Rede de Display</td><td>Desativado</td></tr>
+        <tr><td>Lance</td><td>Maximizar Conversões · sem tCPA inicial · revisar após 30 leads</td></tr>
+        <tr><td>Meta de conversão</td><td>Leads (cliques no WhatsApp)</td></tr>
+        <tr><td>Localização</td><td>Raio de 6 km a partir da clínica Paulista</td></tr>
         <tr><td>Idioma</td><td>Português</td></tr>
         <tr><td>Budget diário</td><td>R$ 16,67</td></tr>
-        <tr><td>URL final</td><td><span class="tbd">[TBD: URL LP nova /paulista · sem UTMs]</span></td></tr>
-        <tr><td>Conversion tracking</td><td><span class="tbd">[TBD: GTM + GA4 + Google Ads conversion]</span></td></tr>
       </tbody>
     </table>
 
     <div class="box-google">
-      <strong>Cobertura aproximada (raio 6 km, assumindo Av. Paulista):</strong> Bela Vista · Cerqueira César · Jardins · Jardim Paulista · Consolação · Higienópolis · Vila Buarque · Liberdade · Aclimação · Pinheiros (parcial) · Vila Mariana (parcial) · Itaim Bibi (parcial).
-      <br><span class="small">⚠ Sobreposição com Moema 6km em Vila Mariana/Itaim/Jardins — acompanhar canibalização nos primeiros 14 dias.</span>
+      <strong>Cobertura aproximada (raio 6 km):</strong> Bela Vista · Cerqueira César · Jardins · Jardim Paulista · Consolação · Higienópolis · Vila Buarque · Liberdade · Aclimação · Pinheiros (parcial) · Vila Mariana (parcial) · Itaim Bibi (parcial).
     </div>
 
-    <h2>2. Estrutura — 3 Ad Groups</h2>
+    <h2>2. Estrutura — 3 Grupos de Anúncios</h2>
 
     <h3 class="ag-tricologista" style="padding: 6px 10px;">AG1 · TRICOLOGISTA</h3>
 
-    <h3>Keywords EXACT</h3>
+    <h3>Palavras-chave EXACT</h3>
     <ul class="kws">
       <li><span class="kw-exact">[tricologista]</span></li>
       <li><span class="kw-exact">[tricologista são paulo]</span></li>
@@ -113,7 +102,7 @@
       <li><span class="kw-exact">[renove paulista]</span></li>
     </ul>
 
-    <h3>Keywords PHRASE</h3>
+    <h3>Palavras-chave PHRASE</h3>
     <ul class="kws">
       <li><span class="kw-phrase">"tricologista"</span></li>
       <li><span class="kw-phrase">"tricologista sp"</span></li>
@@ -122,9 +111,9 @@
       <li><span class="kw-phrase">"renove capilar"</span></li>
     </ul>
 
-    <h3 class="ag-especialista" style="padding: 6px 10px;">AG2 · ESPECIALISTA CC <span class="small" style="color: #888; font-weight: 400;">(campeã: 14 conv, CPL R$ 7,70)</span></h3>
+    <h3 class="ag-especialista" style="padding: 6px 10px;">AG2 · ESPECIALISTA EM COURO CABELUDO</h3>
 
-    <h3>Keywords EXACT</h3>
+    <h3>Palavras-chave EXACT</h3>
     <ul class="kws">
       <li><span class="kw-exact">[especialista em couro cabeludo]</span></li>
       <li><span class="kw-exact">[medico do couro cabeludo]</span></li>
@@ -134,7 +123,7 @@
       <li><span class="kw-exact">[medicos especialistas em queda de cabelo]</span></li>
     </ul>
 
-    <h3>Keywords PHRASE</h3>
+    <h3>Palavras-chave PHRASE</h3>
     <ul class="kws">
       <li><span class="kw-phrase">"especialista em couro cabeludo"</span></li>
       <li><span class="kw-phrase">"especialista couro cabeludo"</span></li>
@@ -147,7 +136,7 @@
 
     <h3 class="ag-avaliacao" style="padding: 6px 10px;">AG3 · AVALIAÇÃO</h3>
 
-    <h3>Keywords EXACT</h3>
+    <h3>Palavras-chave EXACT</h3>
     <ul class="kws">
       <li><span class="kw-exact">[avaliação capilar]</span></li>
       <li><span class="kw-exact">[avaliação tricológica]</span></li>
@@ -161,7 +150,7 @@
       <li><span class="kw-exact">[tricoscopia capilar]</span></li>
     </ul>
 
-    <h3>Keywords PHRASE</h3>
+    <h3>Palavras-chave PHRASE</h3>
     <ul class="kws">
       <li><span class="kw-phrase">"consulta cabelo"</span></li>
       <li><span class="kw-phrase">"tricologia capilar"</span></li>
@@ -171,70 +160,77 @@
       <li><span class="kw-phrase">"diagnostico capilar"</span></li>
     </ul>
 
-    <h2>3. Negativas (campanha · 5 categorias ativas)</h2>
+    <h2>3. Palavras-chave Negativas</h2>
 
     <div class="box">
-      <strong>🔄 Decisões 13/05/2026:</strong> NÃO negativar concorrentes (captura) · NÃO negativar bairros (raio 6km) · NÃO negativar outras especialidades · NÃO negativar nomes próprios soltos.
+      Lista organizada em 5 categorias. Concorrentes e bairros vizinhos <strong>não</strong> são negativados: a primeira para permitir captura de leads que ainda comparam, a segunda porque a geolocalização é controlada pelo raio.
     </div>
 
     <div class="neg-cat">
-      <strong>6.2 · Cidades fora SP capital (PHRASE)</strong><br>
+      <strong>Cidades fora de SP capital (PHRASE)</strong><br>
       rio de janeiro · rj · brasilia · df · belo horizonte · bh · mg · porto alegre · rs · curitiba · pr · florianopolis · sc · salvador · ba · recife · pe · fortaleza · ce · manaus · am · campinas · santos · ribeirão preto · sorocaba · jundiai · guarulhos · osasco · são bernardo · são caetano · diadema · são josé dos campos · abc · abcd · atibaia · mogi · cotia
     </div>
 
     <div class="neg-cat">
-      <strong>6.4 · Informacionais (EXACT)</strong><br>
+      <strong>Buscas informacionais (EXACT)</strong><br>
       [o que é tricologia] · [o que é tricologia capilar] · [o que é tricologista] · [o que é tricologista capilar] · [o que faz um tricologista] · [o que uma tricologista faz] · [qual a função do tricologista] · [quem pode ser tricologista] · [tricologia o que é] · [tricologista o que é] · [tricologista cuida de que]
       <br><strong>PHRASE:</strong> "como funciona" · "significado" · "definição" · "wikipedia" · "youtube" · "blog" · "artigo" · "pdf" · "slideshare" · "estudo" · "pesquisa cientifica" · "tese" · "monografia"
     </div>
 
     <div class="neg-cat">
-      <strong>6.5 · Preço/Acessibilidade — Tier 4 (PHRASE)</strong><br>
+      <strong>Buscas por preço baixo / SUS / convênio (PHRASE)</strong><br>
       barato · gratis · gratuito · grátis · graça · popular · social · sus · posto saude · hospital publico · ambulatorio público · convenio · plano de saude · unimed · amil · bradesco saude · sulamerica · hapvida · notredame · porto seguro · prevent · financiamento · parcelamento · parcela · boleto · preço · valor · quanto custa · valores · tabela
     </div>
 
     <div class="neg-cat">
-      <strong>6.6 · DIY/produto vs serviço (PHRASE)</strong><br>
+      <strong>Produtos e fórmulas caseiras (PHRASE)</strong><br>
       shampoo · condicionador · mascara capilar · oleo · serum · minoxidil · finasterida · dutasterida · comprar online · comprar · vitamina · suplemento · biotina · colageno · pantogar · keranat · loreal · remedio caseiro · receita caseira · caseiro · natural · diy · faça você mesmo · dica · truque · tutorial · em casa · amazon · mercado livre · magazine · loja · farmácia · manipulado
     </div>
 
     <div class="neg-cat">
-      <strong>6.8 · Carreira/curso (PHRASE)</strong><br>
+      <strong>Carreira e cursos (PHRASE)</strong><br>
       curso · formação · formacao · especialização · residencia · faculdade · universidade · mestrado · doutorado · pós-graduação · emprego · vaga · salario · trabalho · concurso · contratacao · profissional · ser tricologista · como se tornar · crm · conselho · registro
     </div>
 
-    <h2>4. RSAs (3 anúncios) — regra RSA-Excelente SP3</h2>
+    <h2>4. Anúncios Responsivos de Pesquisa (3)</h2>
     <div class="box">
-      Cada Ad Group recebe 1 RSA com <strong>15 headlines + 4 descriptions</strong>. Adaptar geo para "Paulista", "Jardins", "Higienópolis", "Bela Vista". DKI <code>{KeyWord:Tricologia Capilar}</code> obrigatório. <span class="tbd">[TBD: redigir via skill rsa-excelente · Ad Strength EXCELENTE]</span>
+      Cada grupo recebe 1 anúncio com <strong>15 títulos + 4 descrições</strong>. Uso obrigatório de DKI <code>{KeyWord:Tricologia Capilar}</code> para alavancar a relevância. Objetivo: Ad Strength Excelente.
     </div>
 
-    <h3>Headlines — estrutura por posição <span class="small">(versão compliance-safe · auditada 13/05/2026)</span></h3>
+    <h3>Estrutura dos 15 títulos</h3>
     <table>
       <colgroup><col style="width:6%"><col style="width:35%"><col></colgroup>
-      <thead><tr><th>#</th><th>Função</th><th>Exemplo aprovado</th></tr></thead>
+      <thead><tr><th>#</th><th>Função</th><th>Título</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td>Brand / profissional</td><td>Renove Capilar Paulista</td></tr>
+        <tr><td>1</td><td>Marca</td><td>Renove Capilar Paulista</td></tr>
         <tr><td>2</td><td>Termo principal + cidade</td><td>Tricologia Capilar na Paulista</td></tr>
         <tr><td>3</td><td>Termo secundário</td><td>Referência em Couro Cabeludo</td></tr>
-        <tr><td>4</td><td>CTA</td><td>Agende Sua Avaliação</td></tr>
+        <tr><td>4</td><td>Chamada para ação</td><td>Agende Sua Avaliação</td></tr>
         <tr><td>5</td><td>DKI</td><td><code>{KeyWord:Tricologia Capilar}</code></td></tr>
-        <tr><td>6</td><td>Variação geo</td><td>Atendimento Centro Expandido SP</td></tr>
+        <tr><td>6</td><td>Variação geográfica</td><td>Atendimento Centro Expandido SP</td></tr>
         <tr><td>7</td><td>Posicionamento</td><td>Tricologia Estética Premium</td></tr>
         <tr><td>8</td><td>Geo bairro</td><td>Próximo aos Jardins e Bela Vista</td></tr>
         <tr><td>9</td><td>Procedimento + bairro</td><td>Avaliação Capilar na Paulista</td></tr>
-        <tr><td>10</td><td>Cuidado + dor</td><td>Cuidado Antiqueda Capilar</td></tr>
+        <tr><td>10</td><td>Cuidado capilar</td><td>Cuidado Antiqueda Capilar</td></tr>
         <tr><td>11</td><td>Clínica + bairro</td><td>Clínica Capilar na Paulista</td></tr>
-        <tr><td>12</td><td>Posicionamento marca</td><td>Renove Seu Couro Cabeludo</td></tr>
+        <tr><td>12</td><td>Posicionamento da marca</td><td>Renove Seu Couro Cabeludo</td></tr>
         <tr><td>13</td><td>Tema técnico</td><td>Saúde do Couro Cabeludo</td></tr>
-        <tr><td>14</td><td>Diferencial método</td><td>Método Raiz Saudável</td></tr>
+        <tr><td>14</td><td>Método</td><td>Método Raiz Saudável</td></tr>
         <tr><td>15</td><td>Persona</td><td>Tricologia Feminina</td></tr>
       </tbody>
     </table>
-    <p class="small">⚠ <strong>Proibido na conta SP3:</strong> claims definitivos ("Adeus Queda"), perguntas-sintoma ("Cabelo Caindo Demais?"), "Especialista" sem CFBM, "Tratamento" (clínica é CNAE estética 9602-5/02 — usar "Cuidado"), "Diagnóstico" (ato privativo de profissional de saúde).</p>
 
-    <h2>5. Assets — Sitelinks / Callouts / Snippets</h2>
+    <h3>Estrutura das 4 descrições</h3>
+    <ol class="small">
+      <li>Apresentação técnica e autoridade da clínica</li>
+      <li>Diferencial do método + chamada para ação</li>
+      <li>Posicionamento de atendimento (individual e personalizado)</li>
+      <li>Benefícios percebidos pela paciente + chamada para ação</li>
+    </ol>
 
-    <h3>Sitelinks (8 — âncoras single-page · compliance-safe)</h3>
+    <h2>5. Extensões — Sitelinks, Frases de Destaque e Snippets</h2>
+
+    <h3>Sitelinks (8)</h3>
     <table>
       <colgroup><col style="width:5%"><col style="width:25%"><col style="width:18%"><col></colgroup>
       <thead><tr><th>#</th><th>Título</th><th>Âncora</th><th>Descrições (2 linhas)</th></tr></thead>
@@ -244,98 +240,34 @@
         <tr><td>3</td><td>Resultados Reais</td><td><code>#resultados</code></td><td>Casos reais da clínica na Paulista. · Veja a jornada das nossas pacientes.</td></tr>
         <tr><td>4</td><td>Cuidado Antiqueda</td><td><code>#antiqueda</code></td><td>Rotinas para fortalecer o cabelo. · Plano personalizado por profissional qualificada.</td></tr>
         <tr><td>5</td><td>Saúde do Couro Cabeludo</td><td><code>#couro-cabeludo</code></td><td>Equilíbrio de oleosidade e bem-estar. · Cuidado contínuo e personalizado.</td></tr>
-        <tr><td>6</td><td>Nossa Clínica na Paulista</td><td><code>#clinica</code></td><td><span class="tbd">[TBD endereço]</span> · Estrutura premium no centro expandido.</td></tr>
+        <tr><td>6</td><td>Nossa Clínica na Paulista</td><td><code>#clinica</code></td><td>Estrutura premium no centro expandido. · Atendimento individual e humanizado.</td></tr>
         <tr><td>7</td><td>Como Funciona</td><td><code>#como-funciona</code></td><td>Etapas da jornada Renove Capilar. · Da avaliação ao acompanhamento.</td></tr>
-        <tr><td>8</td><td>Fale no WhatsApp</td><td><code>#whatsapp</code></td><td>Atendimento direto e humanizado. · <span class="tbd">[TBD WhatsApp Paulista]</span></td></tr>
+        <tr><td>8</td><td>Fale no WhatsApp</td><td><code>#whatsapp</code></td><td>Atendimento direto e humanizado. · Resposta rápida durante o expediente.</td></tr>
       </tbody>
     </table>
-    <p class="small">⚠ Todas as âncoras devem existir como <code>id="..."</code> na LP. Telefone NÃO aparece no headline (Google proíbe — usar Call Asset ou sitelink #whatsapp).</p>
 
-    <h3>Callouts (10 — compliance-safe)</h3>
+    <h3>Frases de Destaque (10)</h3>
     <p class="small">Tricologia capilar referência · Avaliação completa · Atendimento humanizado · Casos reais comprovados · Método exclusivo Renove · Cuidado contínuo e personalizado · Sem fórmulas mágicas · Análise capilar detalhada · Profissionais qualificadas · Foco no bem-estar do fio</p>
 
-    <h3>Structured Snippets</h3>
-    <p class="small"><strong>Serviços:</strong> Avaliação Capilar · Cuidado Antiqueda · MMP Capilar · Microagulhamento Estético · LED Terapêutica · Cuidado do Couro Cabeludo <span class="tbd">[TBD: validar com Keila]</span></p>
-    <p class="small">⚠ Removidos: "Tratamento" (substituído por "Cuidado" — vertente estética CNAE 9602-5/02), "Diagnóstico" (ato privativo médico — substituído por "Avaliação/Análise").</p>
+    <h3>Snippets Estruturados</h3>
+    <p class="small"><strong>Serviços:</strong> Avaliação Capilar · Cuidado Antiqueda · MMP Capilar · Microagulhamento Estético · LED Terapêutica · Cuidado do Couro Cabeludo</p>
 
-    <h2>6. KPIs alvo (30 dias)</h2>
+    <h2>6. Indicadores-meta (30 dias)</h2>
     <table>
-      <thead><tr><th>KPI</th><th>Meta Paulista</th></tr></thead>
+      <thead><tr><th>Indicador</th><th>Meta</th></tr></thead>
       <tbody>
-        <tr><td>CPL geral</td><td>≤ R$ 12</td></tr>
+        <tr><td>CPL (custo por lead)</td><td>≤ R$ 12</td></tr>
         <tr><td>CTR</td><td>≥ 3%</td></tr>
-        <tr><td>Quality Score médio</td><td>≥ 6</td></tr>
-        <tr><td>Conversões/mês</td><td>30+ (baseline)</td></tr>
-        <tr><td>Custo/lead qualificado</td><td>≤ R$ 100</td></tr>
+        <tr><td>Índice de Qualidade médio</td><td>≥ 6</td></tr>
+        <tr><td>Conversões/mês</td><td>30+</td></tr>
+        <tr><td>Custo por lead qualificado</td><td>≤ R$ 100</td></tr>
         <tr><td>Taxa de qualificação</td><td>≥ 30%</td></tr>
       </tbody>
     </table>
 
-    <h2>7. Pendências para subir</h2>
-    <ol class="small">
-      <li><span class="tbd">Endereço final da unidade Paulista (bloqueante)</span></li>
-      <li><span class="tbd">URL LP nova /paulista (sem UTM)</span></li>
-      <li><span class="tbd">Acesso ao site — GTM + GA4 + tag conversão</span></li>
-      <li><span class="tbd">Validar lista de Structured Snippets com Keila</span></li>
-      <li><span class="tbd">Redigir 1 RSA por ad group via skill rsa-excelente</span></li>
-    </ol>
-
-    <h2>8. Compliance Google Ads (auditoria 13/05/2026)</h2>
-
-    <div class="box-google">
-      <strong>Diretrizes aplicadas:</strong> revisão feita contra documentação oficial Google Ads + ANVISA + CFBM. Todos os pontos críticos abaixo já estão refletidos nas seções 2, 4 e 5 desta página.
+    <h2>7. Expansão futura</h2>
+    <div class="box">
+      Quando a estrutura inicial estabilizar volume (30+ conversões/mês), novos grupos de anúncios serão adicionados para ampliar cobertura sobre sintomas, procedimentos específicos e gatilhos hormonais (queda no pós-parto, menopausa, entre outros).
     </div>
-
-    <h3>Substituições obrigatórias</h3>
-    <table>
-      <colgroup><col style="width:28%"><col style="width:28%"><col></colgroup>
-      <thead><tr><th>❌ Proibido</th><th>✅ Aprovado</th><th>Motivo</th></tr></thead>
-      <tbody>
-        <tr><td>Especialista em Couro Cabeludo</td><td>Referência em Couro Cabeludo</td><td>Tricologia não é especialidade reconhecida CFBM/CFM · padrão SP3 conservador</td></tr>
-        <tr><td>Adeus Queda Capilar</td><td>Renove Seu Couro Cabeludo</td><td>Claim definitivo · viola "Declarações enganosas"</td></tr>
-        <tr><td>Tratamento Queda Capilar</td><td>Cuidado Antiqueda Capilar</td><td>"Tratamento" sugere ato médico · clínica é CNAE estética 9602-5/02</td></tr>
-        <tr><td>Cabelo Caindo Demais?</td><td>Cuidado Capilar Premium</td><td>Pergunta-sintoma · risco "Health in personalized advertising" (Limited)</td></tr>
-        <tr><td>Couro Cabeludo Sensível?</td><td>Saúde do Couro Cabeludo</td><td>Mesma lógica — afirmação neutra > pergunta-sintoma</td></tr>
-        <tr><td>Antes & Depois (sitelink)</td><td>Resultados Reais</td><td>Antes/depois em estética é alvo recorrente do algoritmo · ANVISA também</td></tr>
-        <tr><td>Diagnóstico Capilar</td><td>Avaliação Capilar / Análise Capilar</td><td>"Diagnóstico" é ato privativo de profissional de saúde (CFM/CFBM)</td></tr>
-        <tr><td>Tratamento Antiqueda (callout)</td><td>Cuidado Antiqueda</td><td>Mesma lógica — vertente estética</td></tr>
-      </tbody>
-    </table>
-
-    <h3>Regras editoriais Google Ads aplicadas</h3>
-    <ul class="small">
-      <li>Sem repetição excessiva de palavras (mesmo termo entre headlines/recursos)</li>
-      <li>Sem CAPS exagerado, sem <code>!!</code>, sem <code>f1ores</code>-style, sem espaçamento esquisito</li>
-      <li>Telefone NÃO aparece em headline/description — apenas em Call Asset e Sitelink dedicado</li>
-      <li>URL final sem UTMs (regra SP3)</li>
-      <li>DKI <code>{KeyWord:Tricologia Capilar}</code> com default que sempre passa política</li>
-      <li>Sem audiências de saúde sensível (Search-only · sem personalização de público)</li>
-    </ul>
-
-    <h3>Risco residual monitorado</h3>
-    <ul class="small">
-      <li><strong>"Health in personalized advertising":</strong> calvície/queda NÃO está na lista explícita (Diabetes, Artrite, ISTs, Depressão, Ansiedade, Apneia, Fungos, Gravidez, Autismo), mas lista é "non-exhaustive". Se ad receber rótulo "Limited", trocar pergunta-sintoma por afirmação neutra.</li>
-      <li><strong>Saúde e medicamentos:</strong> clínica é estética (CNAE 9602-5/02), não médica. Evitar PRP, carboxiterapia, intradermoterapia, MMP profundo (atos médicos). Procedimentos permitidos: limpeza profunda, alta frequência, LED, LLLT, ultrassom, microagulhamento ≤0,5mm.</li>
-      <li><strong>ANVISA:</strong> para promover farmácia/medicamentos é exigido registro. Não se aplica a serviço estético — mas evitar nome de princípio ativo (minoxidil, finasterida) em headline.</li>
-    </ul>
-
-    <h3>Fontes oficiais consultadas</h3>
-    <ul class="small">
-      <li><a href="https://support.google.com/adspolicy/answer/176031?hl=pt-BR" target="_blank">Saúde e medicamentos — Google Ads (pt-BR)</a></li>
-      <li><a href="https://support.google.com/adspolicy/answer/6021546?hl=pt-BR" target="_blank">Editorial — Google Ads (pt-BR)</a></li>
-      <li><a href="https://support.google.com/adspolicy/answer/143465?hl=pt-br" target="_blank">Publicidade Personalizada — Google Ads (pt-BR)</a></li>
-      <li><a href="https://support.google.com/adspolicy/answer/16701855?hl=en" target="_blank">Health in personalized advertising (en)</a></li>
-      <li><a href="https://support.google.com/adspolicy/answer/6020955?hl=pt-BR" target="_blank">Declarações enganosas — Google Ads (pt-BR)</a></li>
-    </ul>
-
-    <h2>9. Histórico de mudanças</h2>
-    <table>
-      <colgroup><col style="width:14%"><col></colgroup>
-      <thead><tr><th>Data</th><th>Mudança</th></tr></thead>
-      <tbody>
-        <tr><td>2026-05-13</td><td>Página criada · estratégia consolidada (3 AGs · raio 6km · negativas em 5 categorias)</td></tr>
-        <tr><td>2026-05-13</td><td>Auditoria compliance Google Ads · 8 substituições editoriais · sitelinks expandidos 4→8 · callouts 8→10</td></tr>
-      </tbody>
-    </table>
   </body>
 </html>
