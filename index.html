@@ -14,94 +14,217 @@
         color: #111;
         font-size: 14px;
         line-height: 1.5;
-        max-width: 820px;
+        max-width: 1080px;
       }
-      h1 { font-size: 24px; margin: 40px 0 8px; }
-      p.lead { color: #555; font-size: 14px; margin: 0 0 32px; }
-      .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
-      @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+      h1 { font-size: 28px; margin: 40px 0 8px; }
+      p.lead { color: #555; font-size: 15px; margin: 0 0 36px; max-width: 720px; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: stretch;
+      }
+      @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+      .unit {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 100%;
+      }
+
       a.card {
-        display: block;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 22px 22px 20px;
         border: 1px solid #ccc;
+        border-radius: 8px 8px 0 0;
+        border-bottom: 0;
         text-decoration: none;
         color: #111;
-        transition: border-color 0.15s;
+        transition: border-color 0.15s, background 0.15s;
+        background: #fff;
       }
-      a.card:hover { border-color: #111; }
-      a.card h2 { font-size: 16px; margin: 0 0 6px; }
-      a.card p { margin: 0 0 10px; font-size: 12px; color: #555; }
-      a.card .stats { font-size: 11px; color: #888; font-family: "SF Mono", Menlo, monospace; }
-      a.card .badge { display: inline-block; font-size: 10px; padding: 2px 6px; background: #111; color: #fff; border-radius: 3px; margin-right: 4px; font-family: "SF Mono", Menlo, monospace; }
+      a.card:hover { border-color: #111; background: #fafafa; }
+
+      a.card h2 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        font-weight: 700;
+      }
+      a.card .info {
+        flex: 1;
+        margin: 0 0 14px;
+        font-size: 13px;
+        color: #555;
+        line-height: 1.55;
+      }
+      a.card .stats {
+        font-size: 12px;
+        color: #555;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      a.card .badge {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 3px 7px;
+        background: #111;
+        color: #fff;
+        border-radius: 3px;
+        font-family: "SF Mono", Menlo, monospace;
+        letter-spacing: 0.5px;
+      }
       a.card .badge.meta { background: #1877f2; }
       a.card .badge.google { background: #ea4335; }
-      .platform-links { margin-top: 10px; font-size: 11px; }
-      .platform-links a { color: #0066cc; text-decoration: none; margin-right: 10px; }
-      .platform-links a:hover { text-decoration: underline; }
-      .platform-links .sep { color: #ccc; margin-right: 10px; }
-      .platform-links .na { color: #999; }
+
+      .platform-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #ccc;
+        border-top: 1px solid #ddd;
+        border-radius: 0 0 8px 8px;
+        overflow: hidden;
+      }
+      .platform-buttons a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #111;
+        background: #f8f8f8;
+        border-bottom: 1px solid #e5e5e5;
+        transition: background 0.15s, color 0.15s, padding-right 0.15s;
+      }
+      .platform-buttons a:last-child { border-bottom: 0; }
+      .platform-buttons a::after {
+        content: "→";
+        font-weight: 700;
+        font-size: 16px;
+        opacity: 0.4;
+        transition: opacity 0.15s, transform 0.15s;
+      }
+      .platform-buttons a:hover::after { opacity: 1; transform: translateX(3px); }
+
+      .platform-buttons a.btn-overview { background: #f4f4f4; }
+      .platform-buttons a.btn-overview:hover { background: #111; color: #fff; }
+      .platform-buttons a.btn-meta { background: #eff6ff; color: #1877f2; }
+      .platform-buttons a.btn-meta:hover { background: #1877f2; color: #fff; }
+      .platform-buttons a.btn-google { background: #fef2f2; color: #ea4335; }
+      .platform-buttons a.btn-google:hover { background: #ea4335; color: #fff; }
+      .platform-buttons a.btn-disabled {
+        background: #fafafa;
+        color: #bbb;
+        cursor: not-allowed;
+        font-style: italic;
+      }
+      .platform-buttons a.btn-disabled::after { content: ""; }
+
       .summary {
-        margin-top: 32px;
-        padding: 16px 20px;
+        margin-top: 44px;
+        padding: 20px 24px;
         background: #f8f8f8;
         border: 1px solid #eee;
+        border-radius: 8px;
         font-size: 13px;
       }
+      .summary > strong {
+        font-size: 15px;
+        display: block;
+        margin-bottom: 8px;
+      }
       table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
-      th, td { border: 1px solid #ccc; padding: 6px 9px; text-align: left; }
-      th { background: #f0f0f0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px; }
+      th, td { border: 1px solid #ccc; padding: 8px 11px; text-align: left; }
+      th { background: #f0f0f0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
       .total td { background: #111 !important; color: #fff; font-weight: 600; }
-      .meta-info { margin-top: 32px; padding: 16px 20px; border: 1px dashed #ccc; font-size: 12px; color: #666; }
-      .meta-info strong { color: #111; }
+      @media (max-width: 600px) {
+        table { font-size: 11px; }
+        th, td { padding: 6px 8px; }
+      }
+
+      .meta-info {
+        margin-top: 28px;
+        padding: 18px 22px;
+        border: 1px dashed #ccc;
+        border-radius: 8px;
+        font-size: 13px;
+        color: #555;
+        line-height: 1.7;
+      }
+      .meta-info strong { color: #111; font-weight: 600; }
     </style>
   </head>
   <body>
     <h1>Estratégia Renove Capilar</h1>
-    <p class="lead">Tricologia capilar · Keila Alves · 3 unidades em São Paulo. Estrutura de campanhas pronta para subir. Escolha a unidade.</p>
+    <p class="lead">Tricologia capilar · Keila Alves · 3 unidades em São Paulo. Estrutura de campanhas pronta para subir. Clique em cada botão abaixo para ver a estratégia completa por unidade e por plataforma.</p>
 
     <div class="grid">
-      <div>
+      <div class="unit">
         <a class="card" href="tatuape.html">
-          <h2>Tatuapé (SP) →</h2>
-          <p>Rua Monte Serrat, 457 · Zona Leste<br>WhatsApp (11) 93751-1307<br>IG @renovecapilar</p>
+          <h2>Tatuapé (SP)</h2>
+          <div class="info">
+            Rua Monte Serrat, 457 · Zona Leste<br>
+            WhatsApp (11) 93751-1307<br>
+            IG @renovecapilar
+          </div>
           <div class="stats">
             <span class="badge meta">META</span>
-            R$ 500/mês · ~R$ 17/dia
+            <span>R$ 500/mês · ~R$ 17/dia</span>
           </div>
         </a>
-        <div class="platform-links">
-          <a href="tatuape.html">Visão Geral</a><span class="sep">·</span>
-          <a href="tatuape-meta.html">Meta Ads</a>
+        <div class="platform-buttons">
+          <a class="btn-overview" href="tatuape.html">Visão Geral</a>
+          <a class="btn-meta" href="tatuape-meta.html">Meta Ads</a>
+          <a class="btn-disabled">Google Ads (não se aplica)</a>
         </div>
       </div>
-      <div>
+
+      <div class="unit">
         <a class="card" href="moema.html">
-          <h2>Moema (SP) →</h2>
-          <p>Alameda dos Maracatins, 780 · Cj 206 · Indianópolis<br>WhatsApp (11) 99206-1237<br>IG @renovecapilarmoema</p>
+          <h2>Moema (SP)</h2>
+          <div class="info">
+            Alameda dos Maracatins, 780 · Cj 206 · Indianópolis<br>
+            WhatsApp (11) 99206-1237<br>
+            IG @renovecapilarmoema
+          </div>
           <div class="stats">
-            <span class="badge google">GADS</span><span class="badge meta">META</span>
-            R$ 1.750/mês · ~R$ 58/dia
+            <span class="badge google">GADS</span>
+            <span class="badge meta">META</span>
+            <span>R$ 1.750/mês · ~R$ 58/dia</span>
           </div>
         </a>
-        <div class="platform-links">
-          <a href="moema.html">Visão Geral</a><span class="sep">·</span>
-          <a href="moema-meta.html">Meta Ads</a><span class="sep">·</span>
-          <a href="moema-google.html">Google Ads</a>
+        <div class="platform-buttons">
+          <a class="btn-overview" href="moema.html">Visão Geral</a>
+          <a class="btn-meta" href="moema-meta.html">Meta Ads</a>
+          <a class="btn-google" href="moema-google.html">Google Ads</a>
         </div>
       </div>
-      <div>
+
+      <div class="unit">
         <a class="card" href="paulista.html">
-          <h2>Paulista (SP) →</h2>
-          <p>Clínica na região da Av. Paulista<br>WhatsApp e Instagram em definição</p>
+          <h2>Paulista (SP)</h2>
+          <div class="info">
+            Clínica na região da Av. Paulista<br>
+            WhatsApp e Instagram em definição
+          </div>
           <div class="stats">
-            <span class="badge google">GADS</span><span class="badge meta">META</span>
-            R$ 1.750/mês · ~R$ 58/dia
+            <span class="badge google">GADS</span>
+            <span class="badge meta">META</span>
+            <span>R$ 1.750/mês · ~R$ 58/dia</span>
           </div>
         </a>
-        <div class="platform-links">
-          <a href="paulista.html">Visão Geral</a><span class="sep">·</span>
-          <a href="paulista-meta.html">Meta Ads</a><span class="sep">·</span>
-          <a href="paulista-google.html">Google Ads</a>
+        <div class="platform-buttons">
+          <a class="btn-overview" href="paulista.html">Visão Geral</a>
+          <a class="btn-meta" href="paulista-meta.html">Meta Ads</a>
+          <a class="btn-google" href="paulista-google.html">Google Ads</a>
         </div>
       </div>
     </div>
