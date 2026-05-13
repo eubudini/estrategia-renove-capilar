@@ -269,5 +269,53 @@
     <div class="box">
       Quando a estrutura inicial estabilizar volume (30+ conversões/mês), novos grupos de anúncios serão adicionados para ampliar cobertura sobre sintomas, procedimentos específicos e gatilhos hormonais (queda no pós-parto, menopausa, entre outros).
     </div>
+
+    <h2>8. Execução — Estado real na conta</h2>
+    <div class="box-google">
+      Estrutura subida em <strong>13/05/2026</strong> via MCP <code>google-ads-sp3</code> na conta <strong>Renove Capilar | SP3 Company</strong>. Status: <strong>PAUSADA</strong> aguardando revisão e ativação manual.
+    </div>
+
+    <h3>IDs e parâmetros técnicos</h3>
+    <table>
+      <colgroup><col style="width:30%"><col></colgroup>
+      <tbody>
+        <tr><td>Conta (customer_id)</td><td><code>6469482801</code></td></tr>
+        <tr><td>Campanha</td><td><code>23840976426</code> · [SP3] [SEARCH] [MAX.CONV] [MOEMA]</td></tr>
+        <tr><td>AG TRICOLOGISTA</td><td><code>196149248283</code></td></tr>
+        <tr><td>AG ESPECIALISTA CC</td><td><code>196149167163</code></td></tr>
+        <tr><td>AG AVALIACAO</td><td><code>196149863749</code></td></tr>
+        <tr><td>Raio geográfico</td><td>6 km de <code>(-23.6094, -46.6647)</code> · Al. dos Maracatins, 780, Moema</td></tr>
+        <tr><td>URL final</td><td><code>https://lp.keilaterapeutacapilar.com.br</code></td></tr>
+        <tr><td>Modelo de acompanhamento</td><td class="mono">{lpurl}?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={campaignid}&amp;utm_content={adgroupid}&amp;utm_term={keyword}&amp;gclid={gclid}</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Ajustes manuais pendentes (antes de ativar)</h3>
+    <table>
+      <colgroup><col style="width:5%"><col style="width:30%"><col></colgroup>
+      <thead><tr><th>#</th><th>Ajuste</th><th>Motivo</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Vincular business_name "Renove Capilar"</td><td>API rejeita BUSINESS_NAME via asset link — fazer em Assets do painel</td></tr>
+        <tr><td>2</td><td>Remover 8 callouts duplicados</td><td>Primeira chamada criou 8 antes de falhar no item "Profissionais qualificadas" (26 chars); segunda chamada recriou todos. Total: 18 callouts, 8 duplicados a remover.</td></tr>
+        <tr><td>3</td><td>Adicionar "MMP Capilar" ao snippet "Services"</td><td>Snippet criado com 5 valores; falta 1 do plano original</td></tr>
+        <tr><td>4</td><td>Confirmar Display OFF e Parceiros OFF</td><td>API enviou false, validar na UI</td></tr>
+        <tr><td>5</td><td>Conferir Ad Strength dos 3 RSAs</td><td>Meta: Excelente em todos</td></tr>
+        <tr><td>6</td><td>Confirmar ação de conversão vinculada</td><td>Smart Bidding (Max.Conv) precisa de conversão ativa para otimizar</td></tr>
+        <tr><td>7</td><td>Ativar campanha</td><td>Status atual: PAUSADA</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Volumes confirmados na conta</h3>
+    <table>
+      <thead><tr><th>Recurso</th><th>Plano</th><th>Subido</th></tr></thead>
+      <tbody>
+        <tr><td>Keywords totais</td><td>49 (20+13+16)</td><td>49 ✓</td></tr>
+        <tr><td>Negativas nível campanha</td><td>~145</td><td>143 ✓</td></tr>
+        <tr><td>RSAs</td><td>3 (1 por AG)</td><td>3 ✓</td></tr>
+        <tr><td>Sitelinks</td><td>8</td><td>8 ✓</td></tr>
+        <tr><td>Callouts</td><td>10</td><td>18 (8 duplicados ❌)</td></tr>
+        <tr><td>Snippet Serviços</td><td>6 valores</td><td>5 valores (falta MMP ❌)</td></tr>
+      </tbody>
+    </table>
   </body>
 </html>
