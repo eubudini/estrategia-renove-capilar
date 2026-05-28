@@ -8,13 +8,11 @@
 **Por que bloqueia:** sem endereço, não dá pra configurar geo-targeting do Google nem definir Tier 1 final da Meta.
 **Pergunta pra cliente:** "Qual o endereço completo da unidade Paulista? (rua, número, andar/sala, bairro, CEP)"
 
-### 2. Paulista — WhatsApp dedicado
-**Por que bloqueia:** lead form do Meta + extensão de chamada no Google precisam de número.
-**Pergunta:** "Qual WhatsApp da unidade Paulista?"
+### 2. Paulista — WhatsApp dedicado ✅ RESOLVIDO
+**WhatsApp da unidade Paulista:** +55 11 94207-3872 (informado pela cliente em 28/05).
 
-### 3. Paulista — Instagram
-**Por que bloqueia:** Meta exige página IG/FB vinculada para rodar anúncio.
-**Decisão necessária:** criar `@renovecapilarpaulista` (recomendado) ou rodar Paulista usando `@renovecapilar` matriz?
+### 3. Paulista — Página vinculada ✅ RESOLVIDO
+**Decisão:** Paulista roda na página matriz **Renove Saúde Integrada** (Facebook), mesma das demais unidades. Não será criada página/IG dedicado.
 
 ### 4. BM Meta
 **Por que bloqueia:** sem definir BM, não cria Pixel nem sobe anúncio.
@@ -89,8 +87,7 @@ Oi Keila! Pra subir as campanhas da Renove com qualidade, preciso de algumas
 informações que ainda faltam. Pode me responder?
 
 1. Endereço completo da unidade Paulista (rua, número, bairro, CEP)
-2. WhatsApp da unidade Paulista
-3. Horário de funcionamento das 3 unidades
+2. Horário de funcionamento das 3 unidades
 4. Ticket médio dos tratamentos após a avaliação (R$100)
 5. Como o lead é atendido depois que preenche o formulário? (vai pra WhatsApp humano?
    Tem calendário online?)
@@ -105,9 +102,6 @@ Sobre o site novo:
 10. Em qual URL ficou a LP nova? Tem versões por unidade?
 11. Posso plantar nossos pixels (Google + Meta) na LP ou precisa pedir pro
     desenvolvedor?
-
-Falta criar o Instagram da unidade Paulista (@renovecapilarpaulista) antes
-de subir os anúncios — pode autorizar a criação?
 
 Obrigado!
 ```
