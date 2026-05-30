@@ -331,5 +331,41 @@
       <strong>Permitido com ressalva.</strong> A política do Meta libera antes/depois para procedimentos capilares (categoria cosmética), desde que público 18+ e sem explorar insegurança. <strong>Cuidados no V17:</strong> copy de bem-estar (sem "sua queda" / "cabelo ralo") e, idealmente, <strong>suavizar o close do couro com falha</strong> para reduzir risco de reprovação automática do Meta em saúde. Para zero risco de bloqueio, usar versão editada que enfatize o resultado/processo, não a falha.
     </div>
 
+    <h2>8. Novos Públicos — Remarketing &amp; Sinal (Advantage+)</h2>
+    <p>
+      Nova campanha (CBO) com dois conjuntos: <strong>prospecção Advantage+</strong> alimentada pelo sinal de quem já engajou no Instagram, e <strong>remarketing</strong> restrito a esse público quente. Públicos personalizados já criados no Gerenciador (IG engajamento 30/60/90 + seguidores).
+    </p>
+
+    <h3>CJ01 · ADV+ — Sinal + Interesse (prospecção)</h3>
+    <table>
+      <thead><tr><th>Campo</th><th>Configuração</th></tr></thead>
+      <tbody>
+        <tr><td>Tipo</td><td>Advantage+ Audience</td></tr>
+        <tr><td>Sugestões de público (audience signal)</td><td><code>CAPILAR-TATUAPE-IG-ENG-90</code> + <code>CAPILAR-TATUAPE-IG-SEGUIDORES</code></td></tr>
+        <tr><td>Interesses (somar ao sinal)</td><td>tricologia · cuidado capilar · queda de cabelo · couro cabeludo · bem-estar feminino · autocuidado</td></tr>
+        <tr><td>Idade · Gênero</td><td>Mulheres 30–65+</td></tr>
+        <tr><td>Geo</td><td>bairros Zona Leste (seção 2)</td></tr>
+        <tr><td>Exclusões</td><td>leads 180 d · clientes ativos · <code>CAPILAR-TATUAPE-IG-ENG-90</code> (evita competir com o remarketing)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>CJ02 · Remarketing — Público Personalizado (morno)</h3>
+    <table>
+      <thead><tr><th>Campo</th><th>Configuração</th></tr></thead>
+      <tbody>
+        <tr><td>Tipo</td><td>Público definido (não Advantage+)</td></tr>
+        <tr><td>Incluir</td><td><code>CAPILAR-TATUAPE-IG-ENG-90</code> + <code>CAPILAR-TATUAPE-IG-SEGUIDORES</code></td></tr>
+        <tr><td>Idade · Gênero</td><td>Mulheres 30–65+</td></tr>
+        <tr><td>Geo</td><td>bairros Zona Leste (seção 2)</td></tr>
+        <tr><td>Exclusões</td><td>leads 180 d · clientes ativos</td></tr>
+      </tbody>
+    </table>
+
+    <div class="box-meta">
+      <strong>⚠️ Atenção operacional.</strong>
+      <strong>1) CBO consome o remarketing:</strong> num CBO único o CJ02 (mais barato) tende a sugar a verba e o CJ01 não roda. Rodar o remarketing em campanha separada com budget próprio (~R$ 10–15/dia) ou usar <strong>ABO</strong> (budget fixo por conjunto).
+      <strong>2) Janela 90 d:</strong> já contém os públicos de 30 e 60 d — estes ficam reservados para subir bid/criativo no público mais quente numa fase seguinte.
+    </div>
+
   </body>
 </html>
