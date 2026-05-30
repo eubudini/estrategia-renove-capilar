@@ -247,21 +247,33 @@
         <tr><td>Objetivo</td><td>Vendas (CV) · otimização "Conversa Iniciada"</td></tr>
         <tr><td>Destino</td><td>Click-to-WhatsApp com mensagem pré-preenchida</td></tr>
         <tr><td>Budget</td><td>R$ 63/dia · ~R$ 1.890/mês (CBO)</td></tr>
-        <tr><td>Conjunto</td><td><strong>1 único</strong> · CJ01 ADV+ ABERTO (Advantage+ Audience · idade 25–65+ · geo Paulista · excluir leads 180 d)</td></tr>
-        <tr><td>Por que 1 conjunto</td><td>Budget enxuto precisa concentrar sinal pra sair do aprendizado (~50 conversas/7 d). Vários conjuntos pulverizariam.</td></tr>
+        <tr><td>Conjuntos</td><td><strong>2</strong> · CJ01 ADV+ (sinal + interesse) + CJ02 Remarketing (público personalizado) — detalhe abaixo</td></tr>
         <tr><td>Posicionamentos</td><td>Advantage+ Placements</td></tr>
       </tbody>
     </table>
 
+    <h3>Conjuntos (2)</h3>
+    <table>
+      <colgroup><col style="width:24%"><col></colgroup>
+      <thead><tr><th>Conjunto</th><th>Configuração</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">CJ01 ADV+ (sinal + interesse)</td><td>Advantage+ Audience · sugestões de público: <code>CAPILAR-PAULISTA-IG-ENG-90</code> + <code>CAPILAR-PAULISTA-IG-SEGUIDORES</code> · interesses: tricologia · cuidado capilar · queda de cabelo · couro cabeludo · bem-estar feminino · autocuidado · mulheres 30–65+ · geo Centro Expandido · excluir leads 180 d + clientes + <code>CAPILAR-PAULISTA-IG-ENG-90</code> (não competir com o remarketing)</td></tr>
+        <tr><td class="mono">CJ02 Remarketing</td><td>Público definido (não ADV+) · incluir <code>CAPILAR-PAULISTA-IG-ENG-90</code> + <code>CAPILAR-PAULISTA-IG-SEGUIDORES</code> · mulheres 30–65+ · geo Centro Expandido · excluir leads 180 d + clientes</td></tr>
+      </tbody>
+    </table>
+    <div class="box-meta">
+      <strong>⚠️ CBO consome o remarketing:</strong> num CBO único o CJ02 (mais barato) tende a sugar a verba e o CJ01 não roda. Rodar o remarketing em campanha separada (~R$ 10–15/dia) ou usar <strong>ABO</strong> (budget fixo por conjunto). A janela de 90 d já contém os públicos de 30 e 60 d — estes ficam reservados para subir bid/criativo no público mais quente numa fase seguinte.
+    </div>
+
     <h3>Anúncios distribuídos por conjunto</h3>
-    <p class="small">Os 5 vídeos rodam no conjunto. O CBO redistribui a verba para o anúncio com melhor performance.</p>
+    <p class="small">Os 5 vídeos rodam nos <strong>dois conjuntos</strong>. O CBO redistribui a verba para o anúncio + conjunto com melhor performance.</p>
     <table>
       <colgroup><col style="width:18%"><col style="width:16%"><col style="width:32%"><col style="width:22%"><col style="width:12%"></colgroup>
       <thead><tr><th>Campanha</th><th>Conjunto</th><th>Anúncio</th><th>Tema</th><th>Drive</th></tr></thead>
       <tbody>
         <tr>
           <td class="camp-cv mono" rowspan="5">[C04] [CV] [CBO] [MENSAGENS] [TRICO] [PAULISTA] [TESTE] [R$63]</td>
-          <td class="cj mono" rowspan="5">CJ01 ADV+ ABERTO</td>
+          <td class="cj mono" rowspan="5">CJ01 ADV+ · CJ02 RMK</td>
           <td>V13 │ CJ01 │ <span class="ad-id">SENSORIAL — CUIDADO DA PELE</span></td>
           <td>Cuidado sensorial · couro cabeludo e bem-estar</td>
           <td><span class="small">⏳ subir ao Drive</span></td>
@@ -330,42 +342,6 @@
     <h3>Compliance — V17 (antes/depois)</h3>
     <div class="box-meta">
       <strong>Permitido com ressalva.</strong> A política do Meta libera antes/depois para procedimentos capilares (categoria cosmética), desde que público 18+ e sem explorar insegurança. <strong>Cuidados no V17:</strong> copy de bem-estar (sem "sua queda" / "cabelo ralo") e, idealmente, <strong>suavizar o close do couro com falha</strong> para reduzir risco de reprovação automática do Meta em saúde. Para zero risco de bloqueio, usar versão editada que enfatize o resultado/processo, não a falha.
-    </div>
-
-    <h2>8. Novos Públicos — Remarketing &amp; Sinal (Advantage+)</h2>
-    <p>
-      Nova campanha (CBO) com dois conjuntos: <strong>prospecção Advantage+</strong> alimentada pelo sinal de quem já engajou no Instagram, e <strong>remarketing</strong> restrito a esse público quente. Públicos personalizados já criados no Gerenciador (IG engajamento 30/60/90 + seguidores).
-    </p>
-
-    <h3>CJ01 · ADV+ — Sinal + Interesse (prospecção)</h3>
-    <table>
-      <thead><tr><th>Campo</th><th>Configuração</th></tr></thead>
-      <tbody>
-        <tr><td>Tipo</td><td>Advantage+ Audience</td></tr>
-        <tr><td>Sugestões de público (audience signal)</td><td><code>CAPILAR-PAULISTA-IG-ENG-90</code> + <code>CAPILAR-PAULISTA-IG-SEGUIDORES</code></td></tr>
-        <tr><td>Interesses (somar ao sinal)</td><td>tricologia · cuidado capilar · queda de cabelo · couro cabeludo · bem-estar feminino · autocuidado</td></tr>
-        <tr><td>Idade · Gênero</td><td>Mulheres 30–65+</td></tr>
-        <tr><td>Geo</td><td>bairros Centro Expandido (seção 2)</td></tr>
-        <tr><td>Exclusões</td><td>leads 180 d · clientes ativos · <code>CAPILAR-PAULISTA-IG-ENG-90</code> (evita competir com o remarketing)</td></tr>
-      </tbody>
-    </table>
-
-    <h3>CJ02 · Remarketing — Público Personalizado (morno)</h3>
-    <table>
-      <thead><tr><th>Campo</th><th>Configuração</th></tr></thead>
-      <tbody>
-        <tr><td>Tipo</td><td>Público definido (não Advantage+)</td></tr>
-        <tr><td>Incluir</td><td><code>CAPILAR-PAULISTA-IG-ENG-90</code> + <code>CAPILAR-PAULISTA-IG-SEGUIDORES</code></td></tr>
-        <tr><td>Idade · Gênero</td><td>Mulheres 30–65+</td></tr>
-        <tr><td>Geo</td><td>bairros Centro Expandido (seção 2)</td></tr>
-        <tr><td>Exclusões</td><td>leads 180 d · clientes ativos</td></tr>
-      </tbody>
-    </table>
-
-    <div class="box-meta">
-      <strong>⚠️ Atenção operacional.</strong>
-      <strong>1) CBO consome o remarketing:</strong> num CBO único o CJ02 (mais barato) tende a sugar a verba e o CJ01 não roda. Rodar o remarketing em campanha separada com budget próprio (~R$ 10–15/dia) ou usar <strong>ABO</strong> (budget fixo por conjunto).
-      <strong>2) Janela 90 d:</strong> já contém os públicos de 30 e 60 d — estes ficam reservados para subir bid/criativo no público mais quente numa fase seguinte.
     </div>
 
   </body>
